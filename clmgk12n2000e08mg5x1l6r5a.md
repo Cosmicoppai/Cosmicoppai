@@ -4,6 +4,7 @@ seoTitle: "Socket Interface"
 datePublished: Tue Sep 12 2023 16:55:58 GMT+0000 (Coordinated Universal Time)
 cuid: clmgk12n2000e08mg5x1l6r5a
 slug: understanding-sockets-and-udp-with-a-shout-server-example
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1694538088960/499f8ec4-c1ce-480e-9448-a1dec9fda11c.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1694537744212/b6768f06-bc34-4c51-965f-3ede847b13d2.jpeg
 tags: python, networking, socket
 
