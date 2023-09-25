@@ -9,3 +9,8 @@
 - [花](https://github.com/cosmicoppai/hana)
 - [LiSA](https://github.com/cosmicoppai/LiSA)
 - Oat
+
+
+## Other Projects
+- [Ayur](https://github.com/Ayur-service)
+- [Olympus](https://github.com/Cosmicoppai/Geek-a-Thon)
