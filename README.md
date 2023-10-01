@@ -12,5 +12,5 @@
 
 
 ## Other Projects
-- [Ayur](https://github.com/Ayur-service)
+- [Ayur](https://github.com/Cosmicoppai/HackNuthon)
 - [Olympus](https://github.com/Cosmicoppai/Geek-a-Thon)
