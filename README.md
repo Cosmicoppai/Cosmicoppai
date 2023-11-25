@@ -1,6 +1,7 @@
 ## Blogs
 ---
 [Understanding Sockets and UDP with a SHOUT Server Example](https://cosmicoppai.hashnode.dev/understanding-sockets-and-udp-with-a-shout-server-example)
+[How To: Add Custom Metric Panel in PMM](https://cosmicoppai.hashnode.dev/how-to-add-custom-metric-panel-in-pmm)
 ---
 
 
