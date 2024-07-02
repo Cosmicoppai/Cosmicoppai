@@ -1,5 +1,6 @@
 ## Blogs
 
+-  [Docker Security Profiles](https://cosmicoppai.hashnode.dev/docker-security-profile)
 
 -  [Understanding Sockets and UDP with a SHOUT Server](https://cosmicoppai.hashnode.dev/understanding-sockets-and-udp-with-a-shout-server-example)
 
