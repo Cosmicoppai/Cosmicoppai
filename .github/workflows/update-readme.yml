@@ -19,13 +19,29 @@ jobs:
         if [[ $COMMIT_MSG == *"create post:"* ]]; then
           TITLE=$(echo "$COMMIT_MSG" | sed -n 's/.*create post: *\(.*\)/\1/p')
           SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//' | sed 's/-$//')
-          LINK="- [$TITLE](https://cosmicoppai.hashnode.dev/$SLUG)"
+          NEW_LINK="- [$TITLE](https://cosmicoppai.hashnode.dev/$SLUG)"
           
-          if ! grep -q "## Latest Blog Posts" README.md; then
-            echo -e "\n## Latest Blog Posts" >> README.md
+          # Check if Blogs section exists
+          if ! grep -q "## Blogs" README.md; then
+            echo "Error: Blogs section not found in README.md"
+            exit 1
           fi
           
-          sed -i '/## Latest Blog Posts/a '"$LINK" README.md
+          # Extract existing content of the Blogs section
+          BLOGS_CONTENT=$(sed -n '/^## Blogs/,/^##/p' README.md | sed '1d;$d')
+          
+          # Prepare new content
+          NEW_CONTENT="## Blogs\n\n$NEW_LINK"
+          
+          # Add existing links, skipping duplicates
+          echo "$BLOGS_CONTENT" | while read -r line; do
+            if [[ $line != "$NEW_LINK" && $line == -* ]]; then
+              NEW_CONTENT="${NEW_CONTENT}\n$line"
+            fi
+          done
+          
+          # Update README.md
+          sed -i '/^## Blogs/,/^##/c\'"$NEW_CONTENT" README.md
           
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
