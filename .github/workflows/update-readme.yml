@@ -1,0 +1,37 @@
+name: Update README with new blog post
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Update README
+      run: |
+        COMMIT_MSG=$(git log -1 --pretty=%B)
+        if [[ $COMMIT_MSG == *"create post:"* ]]; then
+          TITLE=$(echo "$COMMIT_MSG" | sed -n 's/.*create post: *\(.*\)/\1/p')
+          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//' | sed 's/-$//')
+          LINK="- [$TITLE](https://cosmicoppai.hashnode.dev/$SLUG)"
+          
+          if ! grep -q "## Latest Blog Posts" README.md; then
+            echo -e "\n## Latest Blog Posts" >> README.md
+          fi
+          
+          sed -i '/## Latest Blog Posts/a '"$LINK" README.md
+          
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README.md with new blog post link" || echo "No changes to commit"
+          git push
+        else
+          echo "No new blog post to add to README.md."
+        fi
