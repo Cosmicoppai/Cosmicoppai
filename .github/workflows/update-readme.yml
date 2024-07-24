@@ -14,6 +14,7 @@ jobs:
         fetch-depth: 2
 
     - name: Update README
+      shell: bash
       run: |
         COMMIT_MSG=$(git log -1 --pretty=%B)
         if [[ $COMMIT_MSG == *"create post:"* ]]; then
@@ -31,20 +32,20 @@ jobs:
           BLOGS_CONTENT=$(sed -n '/^## Blogs/,/^##/p' README.md)
           
           # Prepare new content
-          NEW_CONTENT="## Blogs\n\n$NEW_LINK"
+          NEW_CONTENT="## Blogs\n\n$NEW_LINK\n"
           
           # Add existing links, skipping duplicates and limiting to 5
           COUNTER=1
-          echo "$BLOGS_CONTENT" | while read -r line; do
+          while IFS= read -r line; do
             if [[ $line != "$NEW_LINK" && $line == -* && $COUNTER -lt 5 ]]; then
-              NEW_CONTENT="${NEW_CONTENT}\n$line"
-              COUNTER=$((COUNTER + 1))
+              NEW_CONTENT+="$line\n"
+              ((COUNTER++))
             elif [[ $line == ##* && $line != "## Blogs" ]]; then
               # We've reached the next section, add it and break
-              NEW_CONTENT="${NEW_CONTENT}\n\n$line"
+              NEW_CONTENT+="\n$line"
               break
             fi
-          done
+          done <<< "$BLOGS_CONTENT"
           
           # Update README.md
           sed -i '/^## Blogs/,/^##/c\'"$NEW_CONTENT" README.md
