@@ -28,15 +28,21 @@ jobs:
           fi
           
           # Extract existing content of the Blogs section
-          BLOGS_CONTENT=$(sed -n '/^## Blogs/,/^##/p' README.md | sed '1d;$d')
+          BLOGS_CONTENT=$(sed -n '/^## Blogs/,/^##/p' README.md)
           
           # Prepare new content
           NEW_CONTENT="## Blogs\n\n$NEW_LINK"
           
-          # Add existing links, skipping duplicates
+          # Add existing links, skipping duplicates and limiting to 5
+          COUNTER=1
           echo "$BLOGS_CONTENT" | while read -r line; do
-            if [[ $line != "$NEW_LINK" && $line == -* ]]; then
+            if [[ $line != "$NEW_LINK" && $line == -* && $COUNTER -lt 5 ]]; then
               NEW_CONTENT="${NEW_CONTENT}\n$line"
+              COUNTER=$((COUNTER + 1))
+            elif [[ $line == ##* && $line != "## Blogs" ]]; then
+              # We've reached the next section, add it and break
+              NEW_CONTENT="${NEW_CONTENT}\n\n$line"
+              break
             fi
           done
           
