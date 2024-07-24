@@ -28,27 +28,20 @@ jobs:
             exit 1
           fi
           
-          # Extract existing content of the Blogs section
-          BLOGS_CONTENT=$(sed -n '/^## Blogs/,/^##/p' README.md)
-          
-          # Prepare new content
-          NEW_CONTENT="## Blogs\n\n$NEW_LINK\n"
-          
-          # Add existing links, skipping duplicates and limiting to 5
-          COUNTER=1
-          while IFS= read -r line; do
-            if [[ $line != "$NEW_LINK" && $line == -* && $COUNTER -lt 5 ]]; then
-              NEW_CONTENT+="$line\n"
-              ((COUNTER++))
-            elif [[ $line == ##* && $line != "## Blogs" ]]; then
-              # We've reached the next section, add it and break
-              NEW_CONTENT+="\n$line"
-              break
-            fi
-          done <<< "$BLOGS_CONTENT"
-          
           # Update README.md
-          sed -i '/^## Blogs/,/^##/c\'"$NEW_CONTENT" README.md
+          awk -v new_link="$NEW_LINK" '
+          BEGIN {in_blogs=0; count=0; printed_new=0}
+          /^## Blogs/ {in_blogs=1; print; print ""; print new_link; printed_new=1; next}
+          /^##/ && in_blogs {in_blogs=0; print; next}
+          in_blogs && /^- / {
+            if (count < 4 && $0 != new_link) {
+              print
+              count++
+            }
+            next
+          }
+          {print}
+          ' README.md > README.tmp && mv README.tmp README.md
           
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
