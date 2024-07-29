@@ -1,5 +1,7 @@
 ## Blogs
 
+- [Character Vs Byte](https://cosmicoppai.hashnode.dev/character-vs-byte)
+
 - [Zero, Zero, What Are You? A Deep Dive into Type Conversion](https://cosmicoppai.hashnode.dev/zero-zero-what-are-you-a-deep-dive-into-type-conversion)
 
 -  [Docker Security Profiles](https://cosmicoppai.hashnode.dev/docker-security-profile)
@@ -8,7 +10,6 @@
 
 -  [How To: Add Custom Metric Panel in PMM](https://cosmicoppai.hashnode.dev/how-to-add-custom-metric-panel-in-pmm)
 
--  [Consistent Hashing](https://cosmicoppai.hashnode.dev/consistent-hashing)
 
 
 
