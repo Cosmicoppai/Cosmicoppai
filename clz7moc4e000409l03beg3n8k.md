@@ -3,6 +3,7 @@ title: "Character Vs Byte"
 datePublished: Mon Jul 29 2024 23:36:18 GMT+0000 (Coordinated Universal Time)
 cuid: clz7moc4e000409l03beg3n8k
 slug: character-vs-byte
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/wGKx2iEPqbo/upload/06aad3e8d339c5681c2c5cc7438a748d.jpeg
 tags: python, computer-science, encoding
 
 ---
