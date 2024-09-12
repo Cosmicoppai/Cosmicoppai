@@ -25,3 +25,4 @@
 - [Olympus](https://github.com/Cosmicoppai/Geek-a-Thon)
 - [XBackup](https://github.com/cosmicoppai/xbackup)
 - [Ds Plot](https://github.com/Cosmicoppai/ds_plot)
+- [Yuujin](https://github.com/Cosmicoppai/yujin)
