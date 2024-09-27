@@ -17,7 +17,7 @@
 ## Working on
 
 - [花](https://github.com/cosmicoppai/hana)
-- [LiSA](https://github.com/cosmicoppai/LiSA)
+- [Yuujin](https://github.com/Cosmicoppai/yujin)
 - Oat
 
 
@@ -26,5 +26,4 @@
 - [Olympus](https://github.com/Cosmicoppai/Geek-a-Thon)
 - [XBackup](https://github.com/cosmicoppai/xbackup)
 - [Ds Plot](https://github.com/Cosmicoppai/ds_plot)
-- [Yuujin](https://github.com/Cosmicoppai/yujin)
 - [LisaMeta](https://github.com/Cosmicoppai/LisaMeta)
