@@ -27,3 +27,4 @@
 - [XBackup](https://github.com/cosmicoppai/xbackup)
 - [Ds Plot](https://github.com/Cosmicoppai/ds_plot)
 - [Yuujin](https://github.com/Cosmicoppai/yujin)
+- [LisaMeta](https://github.com/Cosmicoppai/LisaMeta)
