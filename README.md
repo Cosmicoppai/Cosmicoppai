@@ -1,5 +1,7 @@
 ## Blogs
 
+- [Slots in Python](https://cosmicoppai.hashnode.dev/slots-in-python)
+
 - [Schema change without locking.](https://cosmicoppai.hashnode.dev/schema-change-without-locking)
 
 - [Character Vs Byte](https://cosmicoppai.hashnode.dev/character-vs-byte)
@@ -8,7 +10,6 @@
 
 -  [Docker Security Profiles](https://cosmicoppai.hashnode.dev/docker-security-profile)
 
--  [Understanding Sockets and UDP with a SHOUT Server](https://cosmicoppai.hashnode.dev/understanding-sockets-and-udp-with-a-shout-server-example)
 
 
 
