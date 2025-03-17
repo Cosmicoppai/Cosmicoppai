@@ -20,7 +20,7 @@ jobs:
         if [[ $COMMIT_MSG == *"create post:"* ]]; then
           TITLE=$(echo "$COMMIT_MSG" | sed -n 's/.*create post: *\(.*\)/\1/p')
           SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-zA-Z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//' | sed 's/-$//')
-          NEW_LINK="- [$TITLE](https://cosmicoppai.hashnode.dev/$SLUG)"
+          NEW_LINK="- [$TITLE](https://cosmicoppai.com/$SLUG)"
           
           # Check if Blogs section exists
           if ! grep -q "## Blogs" README.md; then
