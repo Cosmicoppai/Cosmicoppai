@@ -1,5 +1,7 @@
 ## Blogs
 
+- [pt-table-sync](https://cosmicoppai.hashnode.dev/pt-table-sync)
+
 - [Slots in Python](https://cosmicoppai.hashnode.dev/slots-in-python)
 
 - [Schema change without locking.](https://cosmicoppai.hashnode.dev/schema-change-without-locking)
@@ -8,7 +10,6 @@
 
 - [Zero, Zero, What Are You? A Deep Dive into Type Conversion](https://cosmicoppai.hashnode.dev/zero-zero-what-are-you-a-deep-dive-into-type-conversion)
 
--  [Docker Security Profiles](https://cosmicoppai.hashnode.dev/docker-security-profile)
 
 
 
