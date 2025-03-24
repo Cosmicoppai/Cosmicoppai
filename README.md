@@ -1,5 +1,7 @@
 ## Blogs
 
+- [Storing MySQL replica from source](https://cosmicoppai.com/storing-mysql-replica-from-source)
+
 - [pt-table-sync](https://cosmicoppai.hashnode.dev/pt-table-sync)
 
 - [Slots in Python](https://cosmicoppai.hashnode.dev/slots-in-python)
@@ -8,7 +10,6 @@
 
 - [Character Vs Byte](https://cosmicoppai.hashnode.dev/character-vs-byte)
 
-- [Zero, Zero, What Are You? A Deep Dive into Type Conversion](https://cosmicoppai.hashnode.dev/zero-zero-what-are-you-a-deep-dive-into-type-conversion)
 
 
 
