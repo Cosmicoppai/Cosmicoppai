@@ -32,3 +32,4 @@
 - [LisaMeta](https://github.com/Cosmicoppai/LisaMeta)
 - [Nominatim](https://github.com/Cosmicoppai/nominatim)
 - [AOC](https://github.com/Cosmicoppai/aoc)
+- [Limit](https://github.com/Cosmicoppai/limit)
