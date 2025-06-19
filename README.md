@@ -1,5 +1,7 @@
 ## Blogs
 
+- [Bastion Host](https://cosmicoppai.com/bastion-host)
+
 - [Storing MySQL replica from source](https://cosmicoppai.com/storing-mysql-replica-from-source)
 
 - [pt-table-sync](https://cosmicoppai.hashnode.dev/pt-table-sync)
@@ -8,7 +10,6 @@
 
 - [Schema change without locking.](https://cosmicoppai.hashnode.dev/schema-change-without-locking)
 
-- [Character Vs Byte](https://cosmicoppai.hashnode.dev/character-vs-byte)
 
 
 
