@@ -22,7 +22,7 @@
 
 - [花](https://github.com/cosmicoppai/hana)
 - [Yuujin](https://github.com/Cosmicoppai/yujin)
-- Oat
+- Omamori: Tool to ensure privacy and safe internet by default for everyone
 
 
 ## Other Projects
