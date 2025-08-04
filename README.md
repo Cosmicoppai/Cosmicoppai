@@ -20,12 +20,11 @@
 
 ## Working on
 
-- [花](https://github.com/cosmicoppai/hana)
-- [Yuujin](https://github.com/Cosmicoppai/yujin)
 - Omamori: Tool to ensure privacy and safe internet by default for everyone
 
 
 ## Other Projects
+- [Omamori-Stub](https://github.com/OmamoriSec/omamori-stub)
 - [Ayur](https://github.com/Cosmicoppai/HackNuthon)
 - [Olympus](https://github.com/Cosmicoppai/Geek-a-Thon)
 - [XBackup](https://github.com/cosmicoppai/xbackup)
