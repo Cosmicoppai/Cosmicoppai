@@ -1,5 +1,5 @@
 ---
-title: "Storing MySQL replica from source"
+title: "Restoring MySQL replica from source"
 seoTitle: "Syncing replica and source mysql"
 datePublished: Mon Mar 24 2025 18:53:50 GMT+0000 (Coordinated Universal Time)
 cuid: cm8nfdtng000e08l8fo7r8qvz
