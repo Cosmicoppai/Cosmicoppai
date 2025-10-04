@@ -26,7 +26,7 @@
 
 ## Other Projects
 - [Omamori-Stub: Privacy focused stub resolver](https://github.com/OmamoriSec/omamori-stub)
-- [Kago: cmd line wireguard client](https://github.com/Cosmicoppai/kago)
+- [加護: cmd line wireguard client](https://github.com/Cosmicoppai/kago)
 - [辿る: Traceroute clone](https://github.com/Cosmicoppai/tadoru)
 - [Ayur](https://github.com/Cosmicoppai/HackNuthon)
 - [Olympus](https://github.com/Cosmicoppai/Geek-a-Thon)
