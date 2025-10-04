@@ -1,5 +1,7 @@
 ## Blogs
 
+- [Traceroute: Not so hard](https://cosmicoppai.com/traceroute-not-so-hard)
+
 - [Bastion Host](https://cosmicoppai.com/bastion-host)
 
 - [Storing MySQL replica from source](https://cosmicoppai.com/storing-mysql-replica-from-source)
@@ -8,7 +10,6 @@
 
 - [Slots in Python](https://cosmicoppai.hashnode.dev/slots-in-python)
 
-- [Schema change without locking.](https://cosmicoppai.hashnode.dev/schema-change-without-locking)
 
 
 
