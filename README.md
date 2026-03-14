@@ -21,7 +21,7 @@
 
 ## Working on
 
-- Omamori: Tool to ensure privacy and safe internet by default for everyone
+- [Omamori: Tool to ensure privacy and safe internet by default for everyone](https://www.omamorisec.net/)
 
 
 ## Other Projects
